@@ -6,7 +6,7 @@
         Title="MainWindow" Height="350" Width="525">
     <StackPanel>
       <!--Note that by default if DisplayMemberPath is not specified it will be used the ToString() method-->
-      <!--Adding DisplayMemberPath="Name" will display the specified property in this case the Name property-->>
+      <!--Adding DisplayMemberPath="Name" will display the specified property in this case the Name property-->
         <telerik:RadComboBox x:Name="ComboBox" ItemsSource="{Binding Customers}" DisplayMemberPath="Name" >
           <!--RadComboBox.SelectionBoxTemplate property allows for custom Data Tamplate-->
             <telerik:RadComboBox.SelectionBoxTemplate>
