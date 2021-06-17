@@ -1,0 +1,20 @@
+﻿<Window x:Class="ComboBoxWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        xmlns:local="clr-namespace:ComboBoxWPF"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+      <!--Note that by default if DisplayMemberPath is not specified it will be used the ToString() method-->
+      <!--Adding DisplayMemberPath="Name" will display the specified property in this case the Name property-->>
+        <telerik:RadComboBox x:Name="ComboBox" ItemsSource="{Binding Customers}" DisplayMemberPath="Name" >
+          <!--RadComboBox.SelectionBoxTemplate property allows for custom Data Tamplate-->
+            <telerik:RadComboBox.SelectionBoxTemplate>
+                <DataTemplate>
+                  <!--Display the Auto-Calculated Property in the Customer Class as requested-->
+                    <TextBlock Text="{Binding CustomerFullInfo}"></TextBlock>
+                </DataTemplate>
+            </telerik:RadComboBox.SelectionBoxTemplate>
+        </telerik:RadComboBox>
+    </StackPanel>
+</Window>

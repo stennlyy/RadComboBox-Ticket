@@ -1,0 +1,13 @@
+Hello,
+
+    We have looked at your code and provided a fix for the problem.
+    The key places are marked with comments to help you understand what we did.
+     
+    Please look at the following help-topics for more information regarding the problem:
+
+    https://docs.telerik.com/devtools/wpf/controls/radcombobox/overview
+
+    If you need further assistance please contact us!
+
+Best Regards,
+Stenly    
